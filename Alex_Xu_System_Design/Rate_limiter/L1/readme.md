@@ -18,11 +18,3 @@ We use a Python dictionary to store the state and `threading.Lock` to prevent ra
 
 
 **Limitations:** If you scale out to multiple application servers, each server keeps its own independent bucket. A user limited to 5 requests/sec could make 15 requests/sec if routed across 3 different servers.
-
-
-```
-
-
----
-
-Would you like to dive deeper into how to implement the rate-limiting configuration rules engine (assigning different limits based on user tiers or API endpoints)?
